@@ -314,6 +314,16 @@ declare global {
              */
             tapAtPoint(point: { x: number; y: number }): Promise<Actions<R>>;
             /**
+             * Tap the backspace key on the built-in keyboard.
+             * @example await element(by.id('textField')).tapBackspaceKey();
+             */
+            tapBackspaceKey(): Promise<Actions<R>>;
+            /**
+             * Tap the return key on the built-in keyboard.
+             * @example await element(by.id('textField')).tapReturnKey();
+             */
+            tapReturnKey(): Promise<Actions<R>>;
+            /**
              * Use the builtin keyboard to type text into a text field.
              * @param text
              * @example await element(by.id('textField')).typeText('passcode');
